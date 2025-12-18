@@ -6,7 +6,7 @@ public class TestImpl extends TestBase {
 
 
     @Test
-    void openHhSite() {
+    void openGitHubSite() {
 
         getWebDriver().get("https://github.com/taron19?tab=repositories");
 

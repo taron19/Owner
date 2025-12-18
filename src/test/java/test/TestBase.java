@@ -3,7 +3,6 @@ package test;
 
 import config.SimpleConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.managers.OperaDriverManager;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -30,6 +29,8 @@ public class TestBase {
         System.setProperty("remote","true");
         System.setProperty("remote.url","https://user1:1234@selenoid.autotests.cloud/wd/hub");*/
 
+
+        //здесь уже происходит вызов getProperty()
         SimpleConfig simpleConfig = ConfigFactory.create(SimpleConfig.class, System.getProperties());
 
 
