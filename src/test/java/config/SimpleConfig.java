@@ -13,6 +13,7 @@ public interface SimpleConfig extends Config {
     String browserName();
 
     @Key("browser.version")
+    @DefaultValue("chrome")
     String browserVersion();
 
     @Key("remote")
